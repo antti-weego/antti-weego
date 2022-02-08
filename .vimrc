@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'atom/fuzzy-finder'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
