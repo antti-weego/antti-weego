@@ -11,6 +11,7 @@ set nu rnu
 set hlsearch
 
 noremap <Leader>f :Files
+nnoremap <c-p> :Files
 
 call plug#begin()
 Plug 'preservim/NERDTree'
