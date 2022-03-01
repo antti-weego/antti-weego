@@ -1,7 +1,5 @@
-syn on
-:highlight Comment ctermfg=yellow
-set ignorecase
-
+set visualbell
+set t_vb=
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -10,16 +8,22 @@ set number relativenumber
 set nu rnu
 set hlsearch
 
-noremap <Leader>f :Files
-nnoremap <c-p> :Files
+noremap <Leader>f :Files <cr>
+nnoremap <c-p> :Files  <cr>
+nnoremap <c-n> :NERDTree <cr>
+map <silent> å <C-]> 
+map <silent> ä <C-^> 
 
 call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 colorscheme gruvbox
