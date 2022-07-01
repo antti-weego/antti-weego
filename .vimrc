@@ -9,7 +9,7 @@ set nu rnu
 set hlsearch
 
 noremap <Leader>f :Files <cr>
-nnoremap <c-p> :Files  <cr>
+nnoremap <c-p> :Files <cr>
 nnoremap <c-n> :NERDTree <cr>
 map <silent> å <C-]> 
 map <silent> ä <C-^> 
@@ -28,6 +28,20 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
+set cursorline
+
+" Curso!!!
+" SI - Insert mode
+" EI - Normal mode
+" 1 blinking block
+" 2 steady block
+" 3 blinking underline
+" 4 steady underline
+" 5 blinking bar
+" 6 steady bar
+"
+" let &t_SI = "\e[3 q"
+" let &t_EI = "\e[2 q"
 
 ""if &diff
 ""colorscheme evening
