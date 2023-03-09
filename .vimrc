@@ -50,3 +50,12 @@ set cursorline
 ""highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 ""highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
 ""endif
+
+set omnifunc=javascriptcomplete#CompleteJS
+set omnifunc=htmlcomplete#CompleteTags
+
+filetype plugin on
+au FileType php set omnifunc=phpcomplete#CompletePHP
+
+let php_sql_query=1                                                                                        
+let php_htmlInStrings=1
