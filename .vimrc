@@ -8,6 +8,9 @@ set number relativenumber
 set nu rnu
 set hlsearch
 
+set ttyfast
+set noswapfile
+
 noremap <Leader>f :Files <cr>
 nnoremap <c-p> :Files <cr>
 nnoremap <c-n> :NERDTree <cr>
@@ -57,5 +60,8 @@ set omnifunc=htmlcomplete#CompleteTags
 filetype plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
+" You might also find this useful
+" " PHP Generated Code Highlights (HTML & SQL)                                              
+"
 let php_sql_query=1                                                                                        
 let php_htmlInStrings=1
