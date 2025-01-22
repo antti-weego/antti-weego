@@ -8,6 +8,9 @@ set number relativenumber
 set nu rnu
 set hlsearch
 
+set ttyfast
+set noswapfile
+
 noremap <Leader>f :Files <cr>
 nnoremap <c-p> :Files <cr>
 nnoremap <c-n> :NERDTree <cr>
@@ -18,7 +21,7 @@ call plug#begin()
 Plug 'preservim/NERDTree'
 Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/ap/vim-css-color'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'morhetz/gruvbox'
@@ -57,5 +60,8 @@ set omnifunc=htmlcomplete#CompleteTags
 filetype plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 
+" You might also find this useful
+" " PHP Generated Code Highlights (HTML & SQL)                                              
+"
 let php_sql_query=1                                                                                        
 let php_htmlInStrings=1
